@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    background: url('./assets/img/multimeter.jpeg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: .5em;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #fd1c15;
+    height: 10px;
+}
+body::-webkit-scrollbar-track-piece {
+    background-color: #fcf8ee;
+}
+
