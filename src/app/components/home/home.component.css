@@ -1,3 +1,7 @@
+a, u {
+    text-decoration: none;
+}
+
 .row {
     margin-left: -11em;
     margin-right: -11em;
@@ -61,6 +65,7 @@ input {
 
 .box {
 	text-align: center;
+	color: #fcf8ee;
 	background-color: #fd1c15;
 	margin: auto;
 	height: 100%;
@@ -69,6 +74,11 @@ input {
 	align-items: center;
 	position: relative;
 }
+
+.box:hover{
+	color: #fd1c15;
+	
+  }
 
 .box-2 {
 	text-align: center;
@@ -99,6 +109,36 @@ input {
     background-image: url('../../../assets/img/black-sand.jpeg');
     background-size: cover;
 }
+
+.bounce-to-top:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #2098D1;
+	-webkit-transform: scaleY(0);
+	transform: scaleY(0);
+	-webkit-transform-origin: 50% 100%;
+	transform-origin: 50% 100%;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+  }
+  .bounce-to-top:hover, .bounce-to-top:focus, .bounce-to-top:active {
+	color: white;
+  }
+  .bounce-to-top:hover:before, .bounce-to-top:focus:before, .bounce-to-top:active:before {
+	-webkit-transform: scaleY(1);
+	transform: scaleY(1);
+	-webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+	transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  }
 
 /*==============================================================================evrythang==*/
 
