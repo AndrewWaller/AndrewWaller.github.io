@@ -15,9 +15,6 @@ export class HomeComponent implements OnInit {
             e.preventDefault();
         }
     })
-    
   }
-
-  
 
 }

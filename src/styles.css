@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 body {
-    background: url('./assets/img/multimeter.jpeg') no-repeat center center fixed;
+    
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -18,6 +18,15 @@ body::-webkit-scrollbar-thumb {
     height: 10px;
 }
 body::-webkit-scrollbar-track-piece {
-    background-color: #fcf8ee;
+    background-color:  #ded7c9;
 }
 
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }

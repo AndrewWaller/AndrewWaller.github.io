@@ -6,9 +6,16 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ButtonComponent } from './components/button/button.component';
+import { EmailComponent } from './components/email/email.component';
+import { ScriptHackComponent } from './components/script-hack/script-hack.component';
+import { ThankYouComponent } from './components/thank-you/thank-you.component';
+
+import { AgmCoreModule } from '@agm/core';
+import { GmapComponent } from './components/gmap/gmap.component';
 
 const appRoutes: Routes = [
-    {path: '', component: HomeComponent}
+    {path: '', component: HomeComponent},
+    {path: 'thankYou', component: ThankYouComponent}
 ];
 
 @NgModule({
@@ -16,11 +23,18 @@ const appRoutes: Routes = [
     AppComponent,
     HomeComponent,
     NavbarComponent,
-    ButtonComponent
+    ButtonComponent,
+    EmailComponent,
+    ScriptHackComponent,
+    ThankYouComponent,
+    GmapComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyBt_LSyV94xch2hunTKxRs2jBsHfRuMBh0'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent],

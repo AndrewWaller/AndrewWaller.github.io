@@ -2,6 +2,7 @@ a, u {
     text-decoration: none;
 }
 
+
 .row {
     margin-left: -11em;
     margin-right: -11em;
@@ -11,11 +12,6 @@ a, u {
     overflow: none;
     height: 50vh;
     margin: 20px;
-}
-
-img {
-    height: 600px;
-    max-height: 600px;
 }
 
 .img-shrink {
@@ -63,21 +59,31 @@ input {
 	color: #fcf8ee;
 }
 
+.git-fit-logo {
+	width: 5em;
+    height: 4em;
+    margin-top: -20px;
+}
+
 .box {
 	text-align: center;
 	color: #fcf8ee;
-	background-color: #fd1c15;
+	background: #fd1c15;
 	margin: auto;
 	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	position: relative;
+	-o-transition:color 3s ease-out, src 3s ease-in;
+ 	-ms-transition:color 3s ease-out, src 3s ease-in;
+  	-moz-transition:color 3s ease-out, src 3s ease-in;
+  	-webkit-transition:color 3s ease-out, src 3s ease-in;
+  	transition:color 3s ease-out, src 3s ease-in;
 }
 
-.box:hover{
-	color: #fd1c15;
-	
+.box:hover{	
+	color: black;
   }
 
 .box-2 {
@@ -91,62 +97,13 @@ input {
 	font-size: 20px;
 }
 
-.box:hover .overlay{
-	opacity: 1;
-	box-shadow: inset 0 0 0 10px #fd1c15;
-}
-
-.overlay {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	height: 100%;
-	width: 100%;
-	opacity: 0;
-	transition: .1s ease;
-    background-image: url('../../../assets/img/black-sand.jpeg');
-    background-size: cover;
-}
-
-.bounce-to-top:before {
-	content: "";
-	position: absolute;
-	z-index: -1;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background-color: #2098D1;
-	-webkit-transform: scaleY(0);
-	transform: scaleY(0);
-	-webkit-transform-origin: 50% 100%;
-	transform-origin: 50% 100%;
-	-webkit-transition-property: transform;
-	transition-property: transform;
-	-webkit-transition-duration: 0.5s;
-	transition-duration: 0.5s;
-	-webkit-transition-timing-function: ease-out;
-	transition-timing-function: ease-out;
-  }
-  .bounce-to-top:hover, .bounce-to-top:focus, .bounce-to-top:active {
-	color: white;
-  }
-  .bounce-to-top:hover:before, .bounce-to-top:focus:before, .bounce-to-top:active:before {
-	-webkit-transform: scaleY(1);
-	transform: scaleY(1);
-	-webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-	transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-  }
-
 /*==============================================================================evrythang==*/
 
 .my-work {
 	display:block;
     overflow:auto;
     padding: 118px;
-    background-color: #fcf8ee;
+    background-color: #f2eee2;
     height: auto;
 }
 
@@ -198,7 +155,7 @@ input {
 @media only screen and (min-width: 500px) {
     .flex-child {
 		width: 100%;
-    }
+	}
 }
 
 @media only screen and (min-width: 1200px) {
@@ -208,6 +165,13 @@ input {
         -moz-box-sizing: border-box;
         box-sizing: border-box;
         font-size: 600%;
-    }
+	}
+	
+	.git-fit-logo {
+		width: 1em;
+		height: 1em;
+		margin-top: 254px;
+		margin-left: -88px;
+	}
 }
 /*==============================================================================media queries==*/
