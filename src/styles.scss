@@ -21,6 +21,10 @@ body::-webkit-scrollbar-track-piece {
     background-color:  #ded7c9;
 }
 
+a, u {
+    text-decoration: none;
+}
+
 .carousel-item {
     height: 100vh;
     min-height: 300px;
@@ -30,3 +34,4 @@ body::-webkit-scrollbar-track-piece {
     -o-background-size: cover;
     background-size: cover;
   }
+

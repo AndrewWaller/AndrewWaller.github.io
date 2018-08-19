@@ -1,6 +1,4 @@
-a, u {
-    text-decoration: none;
-}
+
 
 
 .row {
@@ -46,6 +44,12 @@ input {
 	color: black;
 }
 
+.work-titles {
+	height: 20px;
+	width: 100px;
+	text-align: left;
+}
+
 .banner {
     color: #fcf8ee;
     font-size: 400%;
@@ -84,7 +88,7 @@ input {
 
 .box:hover{	
 	color: black;
-  }
+}
 
 .box-2 {
 	text-align: center;

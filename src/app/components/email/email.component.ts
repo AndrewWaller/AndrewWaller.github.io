@@ -4,7 +4,7 @@ import { ScriptHackComponent } from '../script-hack/script-hack.component';
 @Component({
   selector: 'app-email',
   templateUrl: './email.component.html',
-  styleUrls: ['./email.component.css']
+  styleUrls: ['./email.component.scss']
 })
 export class EmailComponent implements OnInit {
 

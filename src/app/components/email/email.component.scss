@@ -3,6 +3,7 @@ i {
     background-color: #fd1c15;
     border-radius: 50%;
     border: 5px solid #fd1c15;
+    margin-right: .3vw;
 }
 
 textarea {
@@ -44,4 +45,31 @@ textarea {
     color: #fcf8ee;
     font-family: 'IBM Plex Mono', monospace;
     margin-top: 15.1vh;
+}
+
+.red-box {
+    background-color: #fd1c15;
+}
+
+.box {
+	text-align: center;
+	color: #fcf8ee;
+	background: #fd1c15;
+	margin: auto;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	-o-transition:color 3s ease-out, src 3s ease-in;
+ 	-ms-transition:color 3s ease-out, src 3s ease-in;
+  	-moz-transition:color 3s ease-out, src 3s ease-in;
+  	-webkit-transition:color 3s ease-out, src 3s ease-in;
+  	transition:color 3s ease-out, src 3s ease-in;
+}
+
+.box:hover{	
+    background-color: blue;
+    opacity: 1;
+	box-shadow: inset 0 0 0 10px black;
 }
