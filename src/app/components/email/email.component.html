@@ -22,18 +22,15 @@ onsubmit="submitted=true;">
           <div class="w-100"></div>
           <button class="btn btn-email col-md-4">Send</button>
       </div>
-
     </div>
     <div class="col-md-2">
 
     </div>
-    <div class="col-md-5">
-      <a href="google.com">
-        <div class="box">
+    <div #x class="col-md-5">
+        <div (mouseover)="x.isHover = true" *ngIf="!x.isHover" class="box">
           <i class="fas fa-map-marked-alt fa-5x"></i>
-          <app-gmap></app-gmap>
         </div>
-      </a>
+        <app-gmap (mouseout)="x.isHover = false" *ngIf="x.isHover"></app-gmap>
     </div>
   </div>
 </form>
