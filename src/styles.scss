@@ -21,8 +21,8 @@ body::-webkit-scrollbar-track-piece {
     background-color:  #ded7c9;
 }
 
-a, u, {
-    text-decoration: none;
+a:hover {
+    text-decoration: none !important;
 }
 
 .carousel-item {
