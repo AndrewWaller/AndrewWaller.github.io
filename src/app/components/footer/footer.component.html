@@ -26,11 +26,11 @@ onsubmit="submitted=true;">
     <div class="col-md-2">
 
     </div>
-    <div #x class="col-md-5">
-        <div (mouseover)="x.isHover = true" *ngIf="!x.isHover" class="box">
+    <div #x class="col-md-5" (mouseout)="x.isHover = false;" (mouseover)="x.isHover = true;">
+        <div *ngIf="!x.isHover" class="box">
           <i class="fas fa-map-marked-alt fa-5x"></i>
         </div>
-        <app-gmap (mouseout)="x.isHover = false" *ngIf="x.isHover"></app-gmap>
+        <app-gmap *ngIf="x.isHover"></app-gmap>
     </div>
   </div>
 </form>

@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ButtonComponent } from './components/button/button.component';
-import { EmailComponent } from './components/email/email.component';
+import { FooterComponent } from './components/footer/footer.component';
 import { ScriptHackComponent } from './components/script-hack/script-hack.component';
 import { ThankYouComponent } from './components/thank-you/thank-you.component';
 
@@ -25,7 +25,7 @@ const appRoutes: Routes = [
     HomeComponent,
     NavbarComponent,
     ButtonComponent,
-    EmailComponent,
+    FooterComponent,
     ScriptHackComponent,
     ThankYouComponent,
     GmapComponent
